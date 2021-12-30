@@ -1,0 +1,92 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: rgb(204, 203, 203);
+}
+
+header {
+    background: rgb(43, 50, 82);
+    color: white;
+    padding: 40px 30px;
+    border-bottom: 15px solid rgb(187, 71, 119);
+}
+
+h2 {
+    color: rgb(245, 148, 188);
+}
+
+main {
+    padding: 40px;
+}
+
+article {
+    padding: 20px 80px;
+}
+
+h3 {
+    text-align: center;
+    width: calc(100% - 6);
+    color: white;
+    padding: 12px 0;
+    border: 3px double white;
+}
+
+table {
+    width: 100%;
+    border-spacing: 0;
+}
+
+th,
+td {
+    border: 1px solid black;
+    padding: 5px 8px;
+}
+
+.comment {
+    color: rgb(100, 100, 100);
+}
+
+.focus {
+    font-weight: bold;
+    color: rgb(0, 50, 124);
+}
+
+td:nth-child(2) {
+    width: 25%;
+}
+
+#structural > h3 {
+    background: rgb(20, 102, 31);
+}
+
+#structural th {
+    background: rgb(142, 204, 150);
+}
+
+#structural tr:nth-child(2n - 1) {
+    background: rgb(217, 235, 217);
+}
+
+#structural tr:nth-child(2n) {
+    background:rgb(193, 231, 200)
+}
+
+#form > h3 {
+    background: rgb(25, 20, 102)
+}
+
+#form th {
+    background: rgb(143, 142, 204);
+}
+
+#form tr:nth-child(2n - 1) {
+    background: rgb(217, 217, 235);
+}
+
+#form tr:nth-child(2n) {
+    background:rgb(193, 197, 231)
+}

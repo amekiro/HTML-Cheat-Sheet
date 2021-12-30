@@ -14,39 +14,182 @@
         <main>
             <p>With HTML5, new semantic elements were created. This makes content easier to read in the HTML file removes the need to label div elements with ids or classes. Below is a list of new semantic elements that can be used.</p>
 
-            <section>
+            <article id="structural">
+                <h3>Structural Elements</h3>
                 <table>
                     <thead>
                         <tr>
                             <th>Tag Name</th>
+                            <th>Usage</th>
                             <th>Structure</th>
-                            <th>Replaces</th>
+                            <th>Notes</th>
                             <th>Example</th>
                         </tr>
                     </thead>
                     <tobdy>
                         <tr>
                             <td>article</td>
+                            <td>This tag creates a container for smaller sections of the page, eg. blog posts, comments.</td>
                             <td>
-                                &lt;article&gt;
-                                    &lt;!-- Insert your content here --&gt;
-                                &lt;/article&gt;
+                                <span class="focus">&lt;article&gt;</span>
+                                <br />
+                                    &emsp;<span class="comment">&lt;!-- Insert your content here --&gt;</span>
+                                <br />
+                                <span class="focus">&lt;/article&gt;</span>
                             </td>
                             <td>
+                                <p>This can replace the usage of:</p>
                                 &lt;div class="item"&gt;
-                                    &lt;!-- Insert your content here --&gt;
+                                <br />
+                                    &emsp;<span class="comment">&lt;!-- Insert your content here --&gt;</span>
+                                <br />
                                 &lt;/div&gt;
                             </td>
                             <td>
-                                &lt;article&gt;
-                                    &lt;h4&gt;This is my section title&lt;/h4&gt;
-                                    &lt;p&gt;Let's write some content here!&lt;/p&gt;
-                                &lt;/article&gt;
+                                <span class="focus">&lt;article&gt;</span>
+                                <br />
+                                    &emsp;&lt;h4&gt;This is my section title&lt;/h4&gt;
+                                    <br />
+                                    &emsp;&lt;p&gt;Let's write some content here!&lt;/p&gt;
+                                <br />
+                                <span class="focus">&lt;/article&gt;</span>
                             </td>
                         </tr>
-                    </tobdy>
+                        <tr>
+                            <td>aside</td>
+                            <td>This tag creates a section to describe content related to the main content. It is also not read by text to audio readers.</td>
+                            <td>
+                                <span class="focus">&lt;aside&gt;</span>
+                                <br />
+                                    &emsp;<span class="comment">&lt;!-- Insert your content here --&gt;</span>
+                                <br />
+                                <span class="focus">&lt;/aside&gt;</span>
+                            </td>
+                            <td>
+                                <p>This can replace the usage of:</p>
+                                &lt;div class="caption"&gt;
+                                <br />
+                                    &emsp;<span class="comment">&lt;!-- Insert your content here --&gt;</span>
+                                <br />
+                                &lt;/div&gt;
+                            </td>
+                            <td>
+                                <span class="focus">&lt;aside&gt;</span>
+                                <br />
+                                    &emsp;&lt;p&gt;Actuarial services is defined as...&lt;/p&gt;
+                                <br />
+                                <span class="focus">&lt;/aside&gt;</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>bdi</td>
+                            <td>This tag isolates text that could be written in a different direction (eg. Arabic) compared to the rest of the body text.</td>
+                            <td>
+                                <span class="focus">&lt;bdi&gt;</span><span class="comment">&lt;!-- Insert your content here --&gt;</span><span class="focus">&lt;/bdi&gt;</span>
+                            </td>
+                            <td>
+                                <p>This element is not supported on Internet Explorer/Edge</p>
+                            </td>
+                            <td>
+                                <span class="focus">&lt;bdi&gt;</span><bdi>إيان</bdi><span class="focus">&lt;/bdi&gt;</span>
+                            </td>
+                        </tr>
+                    </tbody>
                 </table>
-            </section>
+            </article>
+
+            <article id="form">
+                <h3>Form Elements</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Tag Name</th>
+                            <th>Usage</th>
+                            <th>Structure</th>
+                            <th>Notes</th>
+                            <th>Example (Code)</th>
+                            <th>Example (Live)</th>
+                        </tr>
+                    </thead>
+                    <tobdy>
+                        <tr>
+                            <td>datalist</td>
+                            <td>This tag is used to provide an autocomplete feature on an input list with a list name corresponding to the id used for the datalist.</td>
+                            <td>
+                                <span class="focus">&lt;datalist id="input-name"&gt;</span>
+                                <br />
+                                    &emsp;&lt;option value="Option 1"&gt;
+                                    <br />
+                                    &emsp;&lt;option value="Option 2"&gt;
+                                    <br />
+                                    &emsp;&lt;option value="Option 3"&gt;
+                                <br />
+                                <span class="focus">&lt;/datalist&gt;</span>
+                            </td>
+                            <td>
+                                <p>This is not supported on Safari.</p>
+                            </td>
+                            <td>
+                                Favorite foods: &lt;input list="foods"&gt;
+                                <br />
+                                <br />
+                                <span class="focus">&lt;datalist id="foods"&gt;</span>
+                                <br />
+                                    &emsp;&lt;option value="Pizza"&gt;
+                                    <br />
+                                    &emsp;&lt;option value="Sushi"&gt;
+                                    <br />
+                                    &emsp;&lt;option value="Cookies"&gt;
+                                <br />
+                                <span class="focus">&lt;/datalist&gt;</span>
+                            </td>
+                            <td>
+                                Favorite foods: <input list="foods">
+                                <br />
+                                <datalist id="foods">
+                                    <option value="Pizza">
+                                    <option value="Sushi">
+                                    <option value="Cookies">
+                                </datalist>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>output</td>
+                            <td>This tag calculates a value based on the formula and inputs entered.</td>
+                            <td>
+                                <span class="focus">&lt;output name="<span class="comment">&lt;!-- Insert name here --&gt;</span>" for="<span class="comment">&lt;!-- Insert variables here --&gt;</span>"&gt;&lt;/output&gt;</span>
+                            </td>
+                            <td>
+                                <p>This is not supported on Internet Explorer.</p>
+                            </td>
+                            <td>
+                                &lt;form oninput="x.value = parseInt(a.value) + parseInt(b.value)"&gt;
+                                <br />
+                                    &emsp;&lt;input type="number" id="a" value="20">
+                                    <br />
+                                    &emsp;+
+                                    <br />
+                                    &emsp;&lt;input type="number" id="b" value="50">
+                                    <br />
+                                    &emsp;=
+                                    <br />
+                                    &emsp;<span class="focus">&lt;output name="x" for="a b"&gt;&lt;/output&gt;</span>
+                                    <br />
+                                &lt;/form&gt;
+                            </td>
+                            <td>
+                                <form oninput="x.value = parseInt(a.value) + parseInt(b.value)">
+                                    <input type="number" id="a" value="20">
+                                    +
+                                    <input type="number" id="b" value="50">
+                                    =
+                                    <output name="x" for="a b"></output></output>
+                                </form>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </article>
         </main>
     </body>
 </html>
