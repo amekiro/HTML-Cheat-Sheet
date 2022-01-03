@@ -27,6 +27,10 @@ article {
     padding: 20px 80px;
 }
 
+article.sample {
+    padding: 0;
+}
+
 h3 {
     text-align: center;
     width: calc(100% - 6);
@@ -44,6 +48,12 @@ th,
 td {
     border: 1px solid black;
     padding: 5px 8px;
+    position: relative;
+}
+
+td ol,
+td ul {
+    padding-left: 20px;
 }
 
 .comment {
@@ -57,6 +67,19 @@ td {
 
 td:nth-child(2) {
     width: 25%;
+}
+
+dialog {
+    position: absolute;
+    width: 100%;
+    margin-left: 30px;
+    margin-top: -20px;
+    top: 0;
+}
+
+.ind {
+    clear: both;
+    padding-left: 15px;
 }
 
 #structural > h3 {
@@ -89,4 +112,68 @@ td:nth-child(2) {
 
 #form tr:nth-child(2n) {
     background:rgb(193, 197, 231)
+}
+
+#input > h3 {
+    background: rgb(102, 20, 58)
+}
+
+#input th {
+    background: rgb(204, 142, 178);
+}
+
+#input tr:nth-child(2n - 1) {
+    background: rgb(235, 217, 225);
+}
+
+#input tr:nth-child(2n) {
+    background:rgb(231, 193, 209)
+}
+
+#attribute > h3 {
+    background: rgb(86, 20, 102)
+}
+
+#attribute th {
+    background: rgb(186, 142, 204);
+}
+
+#attribute tr:nth-child(2n - 1) {
+    background: rgb(232, 217, 235);
+}
+
+#attribute tr:nth-child(2n) {
+    background:rgb(230, 193, 231)
+}
+
+#graphic > h3 {
+    background: rgb(20, 90, 102)
+}
+
+#graphic th {
+    background: rgb(142, 195, 204);
+}
+
+#graphic tr:nth-child(2n - 1) {
+    background: rgb(217, 235, 231);
+}
+
+#graphic tr:nth-child(2n) {
+    background:rgb(193, 231, 229)
+}
+
+#media > h3 {
+    background: rgb(102, 20, 20)
+}
+
+#media th {
+    background: rgb(204, 142, 142);
+}
+
+#media tr:nth-child(2n - 1) {
+    background: rgb(235, 217, 217);
+}
+
+#media tr:nth-child(2n) {
+    background:rgb(231, 193, 193)
 }

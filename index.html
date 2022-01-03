@@ -23,65 +23,87 @@
                             <th>Usage</th>
                             <th>Structure</th>
                             <th>Notes</th>
-                            <th>Example</th>
+                            <th>Example (Code)</th>
+                            <th>Example (Live)</th>
                         </tr>
                     </thead>
-                    <tobdy>
-                        <tr>
+                    <tbody>
+                        <tr> <!-- article -->
                             <td>article</td>
                             <td>This tag creates a container for smaller sections of the page, eg. blog posts, comments.</td>
                             <td>
                                 <span class="focus">&lt;article&gt;</span>
-                                <br />
-                                    &emsp;<span class="comment">&lt;!-- Insert your content here --&gt;</span>
-                                <br />
+                                <div class="ind">
+                                    <span class="comment">&lt;!-- Insert your content here --&gt;</span>
+                                </div>
                                 <span class="focus">&lt;/article&gt;</span>
                             </td>
                             <td>
-                                <p>This can replace the usage of:</p>
-                                &lt;div class="item"&gt;
-                                <br />
-                                    &emsp;<span class="comment">&lt;!-- Insert your content here --&gt;</span>
-                                <br />
-                                &lt;/div&gt;
+                                <ul>
+                                    <li>This is not supported on Internet Explorer 8 and earlier.</li>
+                                    <li>This can replace the usage of:
+                                        <br />
+                                        &lt;div class="item"&gt;
+                                        <div class="ind">
+                                            <span class="comment">&lt;!-- Insert your content here --&gt;</span>
+                                        </div>
+                                        &lt;/div&gt;
+                                    </li>
+                                </ul>
                             </td>
                             <td>
                                 <span class="focus">&lt;article&gt;</span>
-                                <br />
-                                    &emsp;&lt;h4&gt;This is my section title&lt;/h4&gt;
+                                <div class="ind">
+                                    &lt;h4&gt;This is my section title&lt;/h4&gt;
                                     <br />
-                                    &emsp;&lt;p&gt;Let's write some content here!&lt;/p&gt;
-                                <br />
+                                    &lt;p&gt;Let's write some content here!&lt;/p&gt;
+                                </div>
                                 <span class="focus">&lt;/article&gt;</span>
                             </td>
+                            <td>
+                                <article class="sample">
+                                    <h4>This is my section title</h4>
+                                    <p>Let's write some content here!</p>
+                                </article>
+                            </td>
                         </tr>
-                        <tr>
+                        <tr> <!-- aside -->
                             <td>aside</td>
                             <td>This tag creates a section to describe content related to the main content. It is also not read by text to audio readers.</td>
                             <td>
                                 <span class="focus">&lt;aside&gt;</span>
-                                <br />
-                                    &emsp;<span class="comment">&lt;!-- Insert your content here --&gt;</span>
-                                <br />
+                                <div class="ind">
+                                    <span class="comment">&lt;!-- Insert your content here --&gt;</span>
+                                </div>
                                 <span class="focus">&lt;/aside&gt;</span>
                             </td>
                             <td>
-                                <p>This can replace the usage of:</p>
-                                &lt;div class="caption"&gt;
-                                <br />
-                                    &emsp;<span class="comment">&lt;!-- Insert your content here --&gt;</span>
-                                <br />
-                                &lt;/div&gt;
+                                <ul>
+                                    <li>This is not supported on Internet Explorer 8 and older.</li>
+                                    <li>This can replace the usage of:
+                                        <br />
+                                        &lt;div class="caption"&gt;
+                                        <div class="ind">
+                                            <span class="comment">&lt;!-- Insert your content here --&gt;</span>
+                                        </div>
+                                        &lt;/div&gt;
+                                    </li>
+                                </ul>
                             </td>
                             <td>
                                 <span class="focus">&lt;aside&gt;</span>
-                                <br />
-                                    &emsp;&lt;p&gt;Actuarial services is defined as...&lt;/p&gt;
-                                <br />
+                                <div class="ind">
+                                    &lt;p&gt;Actuarial services is defined as...&lt;/p&gt;
+                                </div>
                                 <span class="focus">&lt;/aside&gt;</span>
                             </td>
+                            <td>
+                                <aside>
+                                    <p>Actuarial services is defined as...</p>
+                                </aside>
+                            </td>
                         </tr>
-                        <tr>
+                        <tr> <!-- bdi -->
                             <td>bdi</td>
                             <td>This tag isolates text that could be written in a different direction (eg. Arabic) compared to the rest of the body text.</td>
                             <td>
@@ -91,14 +113,151 @@
                                 <p>This element is not supported on Internet Explorer/Edge</p>
                             </td>
                             <td>
-                                <span class="focus">&lt;bdi&gt;</span><bdi>إيان</bdi><span class="focus">&lt;/bdi&gt;</span>
+                                Time to learn some Arabic! Here's a word: <span class="focus">&lt;bdi&gt;</span><bdi>إيان</bdi><span class="focus">&lt;/bdi&gt;</span>
+                            </td>
+                            <td>
+                                Time to learn some Arabic! Here's a word: <bdi>إيان</bdi>
+                            </td>
+                        </tr>
+                        <tr> <!-- details -->
+                            <td>details</td>
+                            <td>This tag specifies additional details which the user and view/hide on demand.</td>
+                            <td>
+                                <span class="focus">&lt;details&gt;</span>
+                                <div class="ind">
+                                    <span class="comment">&lt;!-- Insert your content here --&gt;</span>
+                                </div>
+                                <span class="focus">&lt;/details&gt;</span>
+                            </td>
+                            <td>
+                                <ul>
+                                    <li>This element is not supported on Internet Explorer/Edge</li>
+                                    <li>The following attributes are used:
+                                        <table>
+                                            <thead>
+                                                <tr>
+                                                    <th>Attribute</th>
+                                                    <th>Value</th>
+                                                    <th>Usage</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>open</td>
+                                                    <td>no values used</td>
+                                                    <td>sets details as opened upon load</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </li>
+                                </ul>
+                            </td>
+                            <td>
+                                <span class="focus">&lt;details open&gt;</span>
+                                <div class="ind">
+                                    &lt;p&gt;Here is a picture of me in New York City!&lt;/p&gt;
+                                </div>
+                                <span class="focus">&lt;/details&gt;</span>
+                            </td>
+                            <td>
+                                <details open>
+                                    <p>Here is a picture of me in New York City!</p>
+                                </details>
+                            </td>
+                        </tr>
+                        <tr> <!-- dialog -->
+                            <td>dialog</td>
+                            <td>This tag creates a separate dialog box to contain information.</td>
+                            <td>
+                                <span class="focus">&lt;dialog&gt;</span><span class="comment">&lt;!-- Insert your content here --&gt;</span><span class="focus">&lt;/dialog&gt;</span>
+                            </td>
+                            <td>
+                                <ul>
+                                    <li>This element is not supported on Internet Explorer/Edge</li>
+                                    <li>The following attributes are used:
+                                        <table>
+                                            <thead>
+                                                <tr>
+                                                    <th>Attribute</th>
+                                                    <th>Value</th>
+                                                    <th>Usage</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>open</td>
+                                                    <td>no values used</td>
+                                                    <td>sets details as opened upon load</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </li>
+                                </ul>
+                            </td>
+                            <td>
+                                &lt;p&gt;I went to Japan last week <span class="focus">&lt;dialog open&gt;I would like to go to Hokkaido in my next trip!&lt;/dialog&gt;</span>and will be going to China next week!&lt;/p&gt;
+                            </td>
+                            <td>
+                                <p>I went to Japan last week <dialog open>I would like to go to Hokkaido in my next trip! (this is used with the dialog tag)</dialog>and will be going to China next week!</p>
+                            </td>
+                        </tr>
+                        <tr> <!-- figcaption -->
+                            <td>figcaption</td>
+                            <td>This tag is used to create a caption for a photo.</td>
+                            <td>
+                                <span class="focus">&lt;figcaption&gt;</span><span class="comment">&lt;!-- Insert your content here --&gt;</span><span class="focus">&lt;/figcaption&gt;</span>
+                            </td>
+                            <td>
+                                <p>There are no additional notes for this tag.</p>
+                            </td>
+                            <td>
+                                &lt;figure&gt;
+                                <div class="ind">
+                                    &lt;img src="./resources/miso_butterfly.jpg" style="width: 200px; height: 300px; object-fit: cover;" /&gt;
+                                    <span class="focus">&lt;figcaption&gt;Miso dressing up as a butterfly for Halloween 2021!&lt;/figcaption&gt;</span>
+                                </div>
+                                &lt;/figure&gt;
+                            </td>
+                            <td>
+                                <figure>
+                                    <img src="./resources/miso_butterfly.jpg" style="width: 200px; height: 300px; object-fit: cover;" />
+                                    <figcaption>Miso dressing up as a butterfly for Halloween 2021!</figcaption>
+                                </figure>
+                            </td>
+                        </tr>
+                        <tr> <!-- figure -->
+                            <td>figure</td>
+                            <td>This tag is used to display a photo separate from the main body.</td>
+                            <td>
+                                <span class="focus">&lt;figure&gt;</span>
+                                <div class="ind">
+                                    <span class="comment">&lt;!-- Insert your content here --&gt;</span>
+                                </div>
+                                <span class="focus">&lt;/figcaption&gt;</span>
+                            </td>
+                            <td>
+                                <p>This is not supported on Internet Explorer 8 and earlier.</p>
+                            </td>
+                            <td>
+                                &lt;figure&gt;
+                                <div class="ind">
+                                    &lt;img src="./resources/miso_butterfly.jpg" style="width: 200px; height: 300px; object-fit: cover;" /&gt;
+                                    <span class="focus">&lt;figcaption&gt;Miso dressing up as a butterfly for Halloween 2021!&lt;/figcaption&gt;</span>
+                                </div>
+                                &lt;/figure&gt;
+                            </td>
+                            <td>
+                                <figure>
+                                    <img src="./resources/miso_butterfly.jpg" style="width: 200px; height: 300px; object-fit: cover;" />
+                                    <figcaption>Miso dressing up as a butterfly for Halloween 2021!</figcaption>
+                                </figure>
                             </td>
                         </tr>
                     </tbody>
                 </table>
             </article>
 
-            <article id="form">
+            <article id="form"> <!-- Complete -->
                 <h3>Form Elements</h3>
                 <table>
                     <thead>
@@ -112,22 +271,22 @@
                         </tr>
                     </thead>
                     <tobdy>
-                        <tr>
+                        <tr> <!-- datalist -->
                             <td>datalist</td>
                             <td>This tag is used to provide an autocomplete feature on an input list with a list name corresponding to the id used for the datalist.</td>
                             <td>
                                 <span class="focus">&lt;datalist id="input-name"&gt;</span>
-                                <br />
-                                    &emsp;&lt;option value="Option 1"&gt;
+                                <div class="ind">
+                                    &lt;option value="Option 1"&gt;
                                     <br />
-                                    &emsp;&lt;option value="Option 2"&gt;
+                                    &lt;option value="Option 2"&gt;
                                     <br />
-                                    &emsp;&lt;option value="Option 3"&gt;
-                                <br />
+                                    &lt;option value="Option 3"&gt;
+                                </div>
                                 <span class="focus">&lt;/datalist&gt;</span>
                             </td>
                             <td>
-                                <p>This is not supported on Safari.</p>
+                                <p>This is not supported on Safari or on Internet Explorer 9 and earlier.</p>
                             </td>
                             <td>
                                 Favorite foods: &lt;input list="foods"&gt;
@@ -153,28 +312,58 @@
                                 </datalist>
                             </td>
                         </tr>
-                        <tr>
+                        <tr> <!-- output -->
                             <td>output</td>
                             <td>This tag calculates a value based on the formula and inputs entered.</td>
                             <td>
                                 <span class="focus">&lt;output name="<span class="comment">&lt;!-- Insert name here --&gt;</span>" for="<span class="comment">&lt;!-- Insert variables here --&gt;</span>"&gt;&lt;/output&gt;</span>
                             </td>
                             <td>
-                                <p>This is not supported on Internet Explorer.</p>
+                                <ul>
+                                    <li>This is not supported on Edge 12 or Internet Explorer and earlier.</li>
+                                    <li>The following attributes are used:
+                                        <table>
+                                            <thead>
+                                                <tr>
+                                                    <th>Attribute</th>
+                                                    <th>Value</th>
+                                                    <th>Usage</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>for</td>
+                                                    <td>id of elements used for calculation separated by spaces</td>
+                                                    <td>connects calculation with data source</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>form</td>
+                                                    <td>id of form</td>
+                                                    <td>specifies the form this output is used for</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>name</td>
+                                                    <td>any value</td>
+                                                    <td>specifies name of output for form</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </li>
+                                </ul>
                             </td>
                             <td>
                                 &lt;form oninput="x.value = parseInt(a.value) + parseInt(b.value)"&gt;
-                                <br />
-                                    &emsp;&lt;input type="number" id="a" value="20">
+                                <div class="ind">
+                                    &lt;input type="number" id="a" value="20">
                                     <br />
-                                    &emsp;+
+                                    +
                                     <br />
-                                    &emsp;&lt;input type="number" id="b" value="50">
+                                    &lt;input type="number" id="b" value="50">
                                     <br />
-                                    &emsp;=
+                                    =
                                     <br />
-                                    &emsp;<span class="focus">&lt;output name="x" for="a b"&gt;&lt;/output&gt;</span>
-                                    <br />
+                                    <span class="focus">&lt;output name="x" for="a b"&gt;&lt;/output&gt;</span>
+                                </div>
                                 &lt;/form&gt;
                             </td>
                             <td>
@@ -185,6 +374,676 @@
                                     =
                                     <output name="x" for="a b"></output></output>
                                 </form>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </article>
+
+            <article id="input">
+                <h3>Input Types/Attributes</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Type/Attribute</th>
+                            <th>Usage</th>
+                            <th>Structure</th>
+                            <th>Notes</th>
+                            <th>Example (Code)</th>
+                            <th>Example (Live)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr> <!-- color -->
+                            <td>color</td>
+                            <td>This input type is used to allow the user to choose from a color picker.</td>
+                            <td>
+                                <span class="focus">&lt;input type="color"&gt;</span>
+                            </td>
+                            <td>
+                                <ul>
+                                    <li>This is not supported on Internet Explorer 11 and earlier and Safari 9.1 and earlier.</li>
+                                    <li>Default value should be ended with a Hex value.</li>
+                                </ul>
+                            </td>
+                            <td>
+                                Select a color: <span class="focus">&lt;input type="color" value="#FF3BAC"&gt;</span>
+                            </td>
+                            <td>
+                                Select a color: <input type="color" value="#FF3BAC">
+                            </td>
+                        </tr>
+                        <tr> <!-- date -->
+                            <td>date</td>
+                            <td>This input type is used to create a date picker.</td>
+                            <td>
+                                <span class="focus">&lt;input type="date"&gt;</span>
+                            </td>
+                            <td>
+                                <ul>
+                                    <li>This is not supported on Internet Explorer 11 and earlier and Safari.</li>
+                                    <li>Default value <strong>must</strong> be written in yyyy-mm-dd format (eg. 2021-02-08).</li>
+                                    <li>Minimum and maximum dates can be set with the min/max attributes.</li>
+                                </ul>
+                            </td>
+                            <td>
+                                Select a date: <span class="focus">&lt;input type="date" value="2000-01-02" min="1950-03-01" max="2022-05-01"&gt;</span>
+                            </td>
+                            <td>
+                                Select a date: <input type="date" value="2000-01-02" min="1950-03-01" max="2022-05-01">
+                            </td>
+                        </tr>
+                        <tr> <!-- autocomplete --> <!-- Issues: need to set up server for data -->
+                            <td>autocomplete</td>
+                            <td>This input attribute indicates if the fields in the form or the individual field should allow autocompletion.</td>
+                            <td>
+                                <span class="focus">&lt;input autocomplete="on"&gt;</span>
+                            </td>
+                            <td>
+                                <p>Autocomplete value choices are "on" or "off"</p>
+                            </td>
+                            <td>
+                                <span class="focus">&lt;form autocomplete="on"&gt;</span>
+                                <div class="ind">
+                                    First Name: &lt;input type="text"&gt;
+                                    <br />
+                                    Last Name: <span class="focus">&lt;input type="text" autocomplete="off"&gt;
+                                </div>
+                                <span class="focus">&lt;/form&gt;</span>
+                            </td>
+                            <td>
+                                <form autocomplete="on">
+                                    First Name: <input type="text">
+                                    Last Name: <input type="text" autocomplete="off">
+                                </form>
+                            </td>
+                        </tr>
+                        <tr> <!-- novalidate --> <!-- Issues: need to set up server for data -->
+                            <td>novalidate</td>
+                            <td>This input attribute indicates if the information does not need to be validated upon submission.</td>
+                            <td>
+                                <span class="focus">&lt;form novalidate&gt;</span>
+                            </td>
+                            <td>
+                                <p>This is not supported on Internet Explorer 9 and earlier and Safari 10 and earlier.</p>
+                            </td>
+                            <td>
+                                <span class="focus">&lt;form novalidate&gt;</span>
+                                <div class="ind">
+                                    First Name: &lt;input type="text"&gt;
+                                    <br />
+                                    Last Name: &lt;input type="text"&gt;
+                                </div>
+                                <span class="focus">&lt;/form&gt;</span>
+                            </td>
+                            <td>
+                                <form autocomplete="on">
+                                    First Name: <input type="text">
+                                    Last Name: <input type="text" autocomplete="off">
+                                </form>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </article>
+
+            <article id="graphic"> <!-- Complete -->
+                <h3>Graphics</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Tag</th>
+                            <th>Usage</th>
+                            <th>Structure</th>
+                            <th>Notes</th>
+                            <th>Example (Code)</th>
+                            <th>Example (Live)</th>
+                        </tr>
+                    </thead>
+                    <tobdy>
+                        <tr> <!-- canvas -->
+                            <td>canvas</td>
+                            <td>This tag is used to draw graphics through scripting (eg. JavaScript)</td>
+                            <td>
+                                <span class="focus">&lt;canvas id="<span class="comment">&lt;!-- Insert name here --&gt;</span>"&gt;<span class="comment">&lt;!-- Insert text here --&gt;</span>&lt;/canvas&gt;</span>
+                            </td>
+                            <td>
+                                <ul>
+                                    <li>This is not supported on Internet Explorer 8 and earlier.</li>
+                                    <li>canvas is only used as a container and does not render any graphics by itself.</li>
+                                    <li>Text between the opening and closing tags will be displayed if the canvas fails to load.</li>
+                                </ul>
+                            </td>
+                            <td>
+                                <span class="focus">&lt;canvas id="canvasSpace"&gt;Your browser does not support this tag&lt;/canvas&gt;</span>
+                                <br />
+                                &lt;script&gt;
+                                <div class="ind">
+                                    const canvSpace = document.getElementById("canvasSpace");
+                                    <br />
+                                    const shape = canvSpace.getContext("2d");
+                                    <br />
+                                    shape.fillStyle = "rgb(33, 53, 153)";
+                                    <br />
+                                    shape.fillRect(10, 5, 200, 300);
+                                </div>
+                                &lt;/script&gt;
+                            </td>
+                            <td>
+                                <canvas id="canvasSpace">Your browser does not support this tag</canvas>
+
+                                <script>
+                                    const canvSpace = document.getElementById("canvasSpace");
+                                    const shape = canvSpace.getContext("2d");
+                                    shape.fillStyle = "rgb(33, 53, 153)";
+                                    shape.fillRect(10, 5, 200, 300);
+                                </script>
+                            </td>
+                        </tr>
+                        <tr> <!-- svg-->
+                            <td>svg</td>
+                            <td>This tag creates a canvas to draw a vector image.</td>
+                            <td>
+                                <span class="focus">&lt;svg&gt;
+                                <br />
+                                <span class="comment">&lt;!-- Insert vector code here --&gt;</span>
+                                <br />
+                                &lt;/svg&gt;</span>
+                            </td>
+                            <td>
+                                <ul>
+                                    <li>This supports many types of shapes such as circle and path.</li>
+                                    <li>The text within the svg tag will only be shown if the vector fails to render.</li>
+                                </ul>
+                            </td>
+                            <td>
+                                <span class="focus">&lt;svg width="300" height="300"&gt;</span>
+                                <div class="ind">
+                                    &lt;defs&gt;
+                                    <div class="ind">
+                                        &lt;linearGradient id="rainbow" x1="0%" y1="0%" x2="100%" y2="0%"&gt;
+                                            <div class="ind">
+                                                &lt;stop offset="0%" style="stop-color:rgb(255, 0, 0);stop-opacity:1" /&gt;
+                                                <br />
+                                                &lt;stop offset="17%" style="stop-color:rgb(255, 166, 0);stop-opacity:1" /&gt;
+                                                <br />
+                                                &lt;stop offset="33%" style="stop-color:rgb(255, 251, 0);stop-opacity:1" /&gt;
+                                                <br />
+                                                &lt;stop offset="50%" style="stop-color:rgb(43, 255, 0);stop-opacity:1" /&gt;
+                                                <br />
+                                                &lt;stop offset="67%" style="stop-color:rgb(0, 195, 255);stop-opacity:1" /&gt;
+                                                <br />
+                                                &lt;stop offset="83%" style="stop-color:rgb(0, 4, 255);stop-opacity:1" /&gt;
+                                                <br />
+                                                &lt;stop offset="100%" style="stop-color:rgb(140, 0, 255);stop-opacity:1" /&gt;
+                                            </div>
+                                        &lt;/linearGradient&gt;
+                                    </div>
+                                    &lt;/defs&gt;
+                                    <br />
+                                    &lt;circle id="head" cx="150" cy="150" r="100" stroke="black" stroke-width="5" fill="url(#rainbow)" /&gt;
+                                    <br />
+                                    &lt;circle id="leye" cx="120" cy="120" r="5" fill="black" /&gt;
+                                    <br />
+                                    &lt;circle id="reye" cx="180" cy="120" r="5" fill="black" /&gt;
+                                    <br />
+                                    &lt;path id="mouth" fill="none" stroke="black" stroke-width="5" d="M100,180, Q150,240 200,180" /&gt;
+                                </div>
+                                <span class="focus">&lt;/svg&gt;</span>
+                            </td>
+                            <td>
+                                <svg width="300" height="300">
+                                    <defs>
+                                        <linearGradient id="rainbow" x1="0%" y1="0%" x2="100%" y2="0%">
+                                            <stop offset="0%" style="stop-color:rgb(255, 0, 0);stop-opacity:1" />
+                                            <stop offset="17%" style="stop-color:rgb(255, 166, 0);stop-opacity:1" />
+                                            <stop offset="33%" style="stop-color:rgb(255, 251, 0);stop-opacity:1" />
+                                            <stop offset="50%" style="stop-color:rgb(43, 255, 0);stop-opacity:1" />
+                                            <stop offset="67%" style="stop-color:rgb(0, 195, 255);stop-opacity:1" />
+                                            <stop offset="83%" style="stop-color:rgb(0, 4, 255);stop-opacity:1" />
+                                            <stop offset="100%" style="stop-color:rgb(140, 0, 255);stop-opacity:1" />
+                                        </linearGradient>
+                                    </defs>
+                                    <circle id="head" cx="150" cy="150" r="100" stroke="black" stroke-width="5" fill="url(#rainbow)" />
+                                    <circle id="leye" cx="120" cy="120" r="5" fill="black" />
+                                    <circle id="reye" cx="180" cy="120" r="5" fill="black" />
+                                    <path id="mouth" fill="none" stroke="black" stroke-width="5" d="M100,180, Q150,240 200,180" />
+                                </svg>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </article>
+
+            <article id="media">
+                <h3>Media Elements</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Tag</th>
+                            <th>Usage</th>
+                            <th>Structure</th>
+                            <th>Notes</th>
+                            <th>Example (Code)</th>
+                            <th>Example (Live)</th>
+                        </tr>
+                    </thead>
+                    <tobdy>
+                        <tr> <!-- audio -->
+                            <td>audio</td>
+                            <td>This tag creates a music player to play audio.</td>
+                            <td>
+                                <span class="focus">&lt;audio&gt;</span>
+                                <div class="ind">
+                                    &lt;source src="<span class="comment">&lt;!-- Insert file path --&gt;</span>"&gt;
+                                </div>
+                                <span class="focus">&lt;/audio&gt;</span>
+                            </td>
+                            <td>
+                                <ul>
+                                    <li>This is not supported on Internet Explorer 8 and earlier.</li>
+                                    <li>The following attributes are used:
+                                        <table>
+                                            <thead>
+                                                <tr>
+                                                    <th>Attribute</th>
+                                                    <th>Value</th>
+                                                    <th>Usage</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>autoplay</td>
+                                                    <td>no value</td>
+                                                    <td>audio will play as soon as it is loaded</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>controls</td>
+                                                    <td>no value</td>
+                                                    <td>creates basic audio controls</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>loop</td>
+                                                    <td>no value</td>
+                                                    <td>makes audio loop</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>muted</td>
+                                                    <td>no value</td>
+                                                    <td>mutes audio on default</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>preload</td>
+                                                    <td>choice of: auto, metadata or none</td>
+                                                    <td>
+                                                        <ul>
+                                                            <li>auto: browser will load entire audio file</li>
+                                                            <li>metadata: browser will only load metadata</li>
+                                                            <li>none: browser will <strong>not</strong> load the audio file</li>
+                                                        </ul>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>src</td>
+                                                    <td>URL</td>
+                                                    <td>identifies audio to play</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </li>
+                                </ul>
+                            </td>
+                            <td>
+                                Song: What Have You Done (feat. Keith Caputo) by Within Temptation
+                                <br />
+                                <span class="focus">&lt;audio controls&gt;</span>
+                                <div class="ind">
+                                    &lt;source src="./resources/02 - What Have You Done (feat. Keith Caputo).mp3" type="audio/mp3"&gt;
+                                    Your browser does not support this audio tag.
+                                </div>
+                                <span class="focus">&lt;/audio&gt;</span>
+                            </td>
+                            <td>
+                                Song: What Have You Done (feat. Keith Caputo) by Within Temptation
+                                <audio controls>
+                                    <source src="./resources/02 - What Have You Done (feat. Keith Caputo).mp3" type="audio/mp3">
+                                    Your browser does not support this audio tag.
+                                </audio>
+                            </td>
+                        </tr>
+                        <tr> <!-- embed -->
+                            <td>embed</td>
+                            <td>This tag renders most media.</td>
+                            <td>
+                                <span class="focus">&lt;embed src="<span class="comment">&lt;!-- Insert file path --&gt;</span>"&gt;</span>
+                            </td>
+                            <td>
+                                <ul>
+                                    <li>This tag is not used as much as the other media tags. It is recommended to use the other media tags instead of embed.</li>
+                                    <li>The following attributes are used:
+                                        <table>
+                                            <thead>
+                                                <tr>
+                                                    <th>Attribute</th>
+                                                    <th>Value</th>
+                                                    <th>Usage</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>height</td>
+                                                    <td>number</td>
+                                                    <td>specifies height of media box</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>src</td>
+                                                    <td>URL</td>
+                                                    <td>specifies media to add to box</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>type</td>
+                                                    <td>any media type listed <a target="_blank" href="https://www.iana.org/assignments/media-types/media-types.xhtml">here</a></td>
+                                                    <td>specifies the file type of the media</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>width</td>
+                                                    <td>number</td>
+                                                    <td>specifies width of media box</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </li>
+                                </ul>
+                            </td>
+                            <td>
+                                <span class="focus">&lt;embed type="video/mp4" src="./resources/miso_trouble.mp4"&gt;</span>
+                            </td>
+                            <td>
+                                <embed type="video/mp4" src="./resources/miso_trouble.mp4">
+                            </td>
+                        </tr>
+                        <tr> <!-- source -->
+                            <td>source</td>
+                            <td>Allows list of different sources for media elements such as video, audio and picture. The browser will render the first source that renders successfully.</td>
+                            <td>
+                                <span class="focus">&lt;source src="<span class="comment">&lt;!-- Insert file path --&gt;</span>"&gt;</span>
+                            </td>
+                            <td>
+                                <ul>
+                                    <li>This is not supported on Internet Explorer 8 and earlier.</li>
+                                    <li>The following attributes are used:
+                                        <table>
+                                            <thead>
+                                                <tr>
+                                                    <th>Attribute</th>
+                                                    <th>Value</th>
+                                                    <th>Usage</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>src</td>
+                                                    <td>URL</td>
+                                                    <td>identifies media to play (required for &lt;audio&gt; and &lt;video&gt;)</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>srcset</td>
+                                                    <td>URL</td>
+                                                    <td>identifies media to display (required for &lt;picture&gt;)</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>media</td>
+                                                    <td>media settings defined in CSS</td>
+                                                    <td>creates basic audio controls</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>sizes</td>
+                                                    <td>media condition-length pair of numbers</td>
+                                                    <td>sets size of media, srcset must be defined with pixel ration values in order to use sizes</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>type</td>
+                                                    <td>any media type listed <a target="_blank" href="https://www.iana.org/assignments/media-types/media-types.xhtml">here</a></td>
+                                                    <td>specifies the file type of the media</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </li>
+                                </ul>
+                            </td>
+                            <td>
+                                &lt;picture&gt;
+                                <div class="ind">
+                                    <span class="focus">&lt;source media="(min-width: 1000px)" srcset="./resources/miso_butterfly.jpg"&gt;
+                                    <br />
+                                    &lt;source media="(min-width: 800px)" srcset="./resources/miso_butterfly2.jpg"&gt;</span>
+                                    <br />
+                                    &lt;img src="./resources/Miso Donut.jpg" alt="Miso wearing a donut" style="width: 200px; height: 300px; object-fit: cover;" /&gt;
+                                </div>
+                                &lt;/picture&gt;
+                            </td>
+                            <td>
+                                <picture>
+                                    <source media="(min-width: 1000px)" srcset="./resources/miso_butterfly.jpg">
+                                    <source media="(min-width: 800px)" srcset="./resources/miso_butterfly2.jpg">
+                                    <img src="./resources/Miso Donut.jpg" alt="Miso wearing a donut" style="width: 200px; height: 300px; object-fit: cover;" />
+                                </picture>
+                            </td>
+                        </tr>
+                        <tr> <!-- track --> <!-- Isuse: video does not render on Chrome and subtitles are not displaying-->
+                            <td>track</td>
+                            <td>This tag adds subtitles to the &lt;audio&gt; and &lt;video&gt; tags.</td>
+                            <td>
+                                <span class="focus">&lt;track src="<span class="comment">&lt;!-- Insert URL here --&gt;</span>"&gt;</span>
+                            </td>
+                            <td>
+                                The following attributes are used:
+                                <table>
+                                    <thead>
+                                        <tr>
+                                            <th>Attribute</th>
+                                            <th>Value</th>
+                                            <th>Usage</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>default</td>
+                                            <td>no value</td>
+                                            <td>track is enabled based on user's preferences</td>
+                                        </tr>
+                                        <tr>
+                                            <td>kind</td>
+                                            <td>choice between: captions, chapters, descriptions, metadata, subtitles</td>
+                                            <td>
+                                                <ul>
+                                                    <li>captions: translation of dialogue and sound effects</li>
+                                                    <li>chapters: chapter titles</li>
+                                                    <li>descriptions: description of content</li>
+                                                    <li>metadata: content used by scripts</li>
+                                                    <li>subtitles: subtitles for video</li>
+                                                </ul>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>label</td>
+                                            <td>any name</td>
+                                            <td>specifies the title of the text track</td>
+                                        </tr>
+                                        <tr>
+                                            <td>src</td>
+                                            <td>URL</td>
+                                            <td>url of text file (required)</td>
+                                        </tr>
+                                        <tr>
+                                            <td>srclang</td>
+                                            <td>any two-letter language code</a></td>
+                                            <td>indicates language used in text file (required for subtitles kind)</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </td>
+                            <td>
+                                &lt;video width="280" height="210" controls&gt;
+                                <div class="ind">
+                                    &lt;source src="./resources/miso_trouble.mp4" type="video/mp4"&gt;
+                                    <br />
+                                    <span class="focus">&lt;track src="./resources/miso_trouble_subtitle.vtt" kind="subtitles" srclang="en" label="English" default&gt;</span>
+                                    <br />
+                                    Your browser does not support this video!
+                                </div>
+                                &lt;/video&gt;
+                            </td>
+                            <td>
+                                <video width="280" height="210" controls>
+                                    <source src="./resources/miso_trouble.mp4" type="video/mp4">
+                                    <track src="./resources/miso_trouble_subtitle.vtt" kind="subtitles" srclang="en" label="English" default>
+                                    Your browser does not support this video!
+                                </video>
+                        </tr>
+                        <tr> <!-- video -->
+                            <td>video</td>
+                            <td>This tag renders a video.</td>
+                            <td>
+                                <span class="focus">&lt;video&gt;</span>
+                                <div class="ind">
+                                    &lt;source src="&lt;!-- Insert file path --&gt;"&gt;
+                                </div>
+                                <span class="focus">&lt;/video&gt;</span>
+                            </td>
+                            <td>
+                                <ul>
+                                    <li>This is not supported on Internet Explorer 8 and earlier.</li>
+                                    <li>
+                                        Only the following video formats are supported:
+                                        <table>
+                                            <thead>
+                                                <tr>
+                                                    <th>Browser</th>
+                                                    <th>MP4</th>
+                                                    <th>WebM</th>
+                                                    <th>Ogg</th>
+                                                </tr>
+                                            </thead>
+                                            <body>
+                                                <tr>
+                                                    <td>Internet Explorer</td>
+                                                    <td>Yes</td>
+                                                    <td>No</td>
+                                                    <td>No</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Chrome</td>
+                                                    <td>Yes</td>
+                                                    <td>Yes</td>
+                                                    <td>Yes</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Firefox</td>
+                                                    <td>Yes</td>
+                                                    <td>Yes</td>
+                                                    <td>Yes</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Safari</td>
+                                                    <td>Yes</td>
+                                                    <td>No</td>
+                                                    <td>No</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Opera</td>
+                                                    <td>Yes</td>
+                                                    <td>Yes</td>
+                                                    <td>Yes</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>MIME Type for Video (not browser)</td>
+                                                    <td>video/mp4</td>
+                                                    <td>video/webm</td>
+                                                    <td>video/ogg</td>
+                                                </tr>
+                                            </body>
+                                        </table>
+                                    </li>
+                                    <li>The following attributes are used:
+                                        <table>
+                                            <thead>
+                                                <tr>
+                                                    <th>Attribute</th>
+                                                    <th>Value</th>
+                                                    <th>Usage</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>autoplay</td>
+                                                    <td>no value</td>
+                                                    <td>audio will play as soon as it is loaded</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>controls</td>
+                                                    <td>no value</td>
+                                                    <td>creates basic audio controls</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>height</td>
+                                                    <td>numerical value representing pixels</td>
+                                                    <td>specifies height of video player</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>loop</td>
+                                                    <td>no value</td>
+                                                    <td>makes video loop</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>muted</td>
+                                                    <td>no value</td>
+                                                    <td>mutes audio on default</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>poster</td>
+                                                    <td>URL</td>
+                                                    <td>sets an image to be displayed while video is downloading or until the user hits the play button</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>preload</td>
+                                                    <td>choice of: auto, metadata or none</td>
+                                                    <td>
+                                                        <ul>
+                                                            <li>auto: browser will load entire video file</li>
+                                                            <li>metadata: browser will only load metadata</li>
+                                                            <li>none: browser will <strong>not</strong> load the video file</li>
+                                                        </ul>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>src</td>
+                                                    <td>URL</td>
+                                                    <td>identifies video to play</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>width</td>
+                                                    <td>numerical value representing pixels</td>
+                                                    <td>specifies width of video player</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </li>
+                                </ul>
+                            </td>
+                            <td>
+                                <span class="focus">&lt;video width="280" height="210" controls poster="./resources/miso_butterfly.jpg"&gt;</span>
+                                <div class="ind">
+                                    &lt;source src="./resources/miso_trouble.mp4" type="video/mp4"&gt;
+                                    Your browser does not support this video!
+                                </div>
+                                <span class="focus">&lt;/video&gt;</span>
+                            </td>
+                            <td>
+                                <video width="280" height="210" controls poster="./resources/miso_butterfly.jpg">
+                                    <source src="./resources/miso_trouble.mp4" type="video/mp4">
+                                    Your browser does not support this video!
+                                </video>
                             </td>
                         </tr>
                     </tbody>
