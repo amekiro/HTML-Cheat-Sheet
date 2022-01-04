@@ -177,3 +177,64 @@ dialog {
 #media tr:nth-child(2n) {
     background:rgb(231, 193, 193)
 }
+
+header#headerSample {
+    border: none;
+    background: none;
+    color: black;
+    padding: 0;
+}
+
+#home {
+    width: 100px;
+    float: left;
+}
+
+#headerSample img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+}
+
+#headerSample div {
+    clear: both;
+    text-align: center;
+    font-size: 12px;
+}
+
+#headerSample nav {
+    margin-left: 15px;
+    padding-top: 30px;
+    float: left;
+    border-bottom: 3px solid black;
+}
+
+#headerSample ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#headerSample li {
+    float: left;
+    padding: 3px 5px;
+}
+
+/* Styles for unique circumstances */
+@media print {
+    article > table > thead > tr > th:nth-child(5),
+    article > table > tbody > tr > td:nth-child(5),
+    article > table > thead > tr > th:nth-child(6),
+    article > table > tbody > tr > td:nth-child(6) {
+        display: none;
+    }
+
+    main {
+        padding: 0;
+        margin: 0;
+        width: 100%;
+    }
+
+    article {
+        padding: 0;
+    }
+}
