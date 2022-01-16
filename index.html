@@ -12,7 +12,7 @@
         </header>
 
         <main>
-            <p>With HTML5, new semantic elements were created. This makes content easier to read in the HTML file removes the need to label div elements with ids or classes. Below is a list of new semantic elements that can be used.</p>
+            <p>With HTML5, new semantic elements were created. This makes content easier to read in the HTML file removes the need to label div elements with ids or classes. Below is a list of new semantic elements that can be used. It is recommended to view this from a desktop.</p>
 
             <article id="structural">
                 <h3>Structural Elements</h3>
@@ -328,6 +328,354 @@
                                         </ul>
                                     </nav>
                                 </header>
+                            </td>
+                        </tr>
+                        <tr> <!-- main -->
+                            <td>main</td>
+                            <td>This tag is used for the main body which is usuall all of the visual HTML elements with the exception of the header and footer.</td>
+                            <td>
+                                <span class="focus">&lt;main&gt;</span>
+                                <div class="ind">
+                                    <span class="comment">&lt;!-- Insert your content here --&gt;</span>
+                                </div>
+                                <span class="focus">&lt;/main&gt;</span>
+                            </td>
+                            <td>
+                                <p>This is not supported on Internet Explorer 11 and earlier.</p>
+                            </td>
+                            <td>
+                                <span class="focus">&lt;main&gt;</span>
+                                <div class="ind">
+                                    &lt;p&gt;Here is my main body!&lt;/&gt;
+                                </div>
+                                <span class="focus">&lt;/main&gt;</span>
+                            </td>
+                            <td>
+                                <main id="main-test">
+                                    <p>Here is my main body!</p>
+                                </main>
+                            </td>
+                        </tr>
+                        <tr> <!-- mark -->
+                            <td>mark</td>
+                            <td>This tag is used to highlight certain text.</td>
+                            <td>
+                                <span class="focus">&lt;mark&gt;</span><span class="comment">&lt;!-- Insert your content here --&gt;</span><span class="focus">&lt;/mark&gt;</span>
+                            </td>
+                            <td>
+                                <ul>
+                                    <li>This is not supported on Internet Explorer 11 and earlier.</li>
+                                    <li>The highlighted color by default is yellow</li>
+                                </ul>
+                            </td>
+                            <td>
+                                Let's highlight this <span class="focus">&lt;mark&gt;word&lt;/mark&gt;</span>
+                            </td>
+                            <td>
+                                Let's highlight this <mark>word</mark>
+                            </td>
+                        </tr>
+                        <tr> <!-- meter -->
+                            <td>meter</td>
+                            <td>This tag is used to display a visual gauge of a number within a range.</td>
+                            <td>
+                                <span class="focus">&lt;meter&gt;&lt;/meter&gt;</span>
+                            </td>
+                            <td>
+                                <ul>
+                                    <li>This element is not supported on Internet Explorer, Edge 12, Safari 5 and earlier.</li>
+                                    <li>This should not be used for a progress bar as there is an existing element for this.</li>
+                                    <li>The following attributes are used:
+                                        <table>
+                                            <thead>
+                                                <tr>
+                                                    <th>Attribute</th>
+                                                    <th>Value</th>
+                                                    <th>Usage</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>form</td>
+                                                    <td>name of form</td>
+                                                    <td>specifies form element uses</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>high</td>
+                                                    <td>number</td>
+                                                    <td>specifies minimum for high range</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>low</td>
+                                                    <td>number</td>
+                                                    <td>specifies maximum for low range</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>max</td>
+                                                    <td>number</td>
+                                                    <td>specifies maximum value in range</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>min</td>
+                                                    <td>number</td>
+                                                    <td>specifies minimum value in range</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>optimum</td>
+                                                    <td>number</td>
+                                                    <td>specifies optimum value in range</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>value</td>
+                                                    <td>number</td>
+                                                    <td>specifies value in gauge</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </li>
+                                </ul>
+                            </td>
+                            <td>
+                                10 <span class="focus">&lt;meter low="40" high="90" min="10" max="110" optimum="80" value="60"&gt;&lt;/meter&gt;</span> 110
+                            </td>
+                            <td>
+                                10 <meter low="40" high="90" min="10" max="110" optimum="80" value="60"></meter> 110
+                            </td>
+                        </tr>
+                        <tr> <!-- nav -->
+                            <td>nav</td>
+                            <td>This tag is used as a container for navigation elements.</td>
+                            <td>
+                                <span class="focus">&lt;nav&gt;</span>
+                                <div class="ind">
+                                    <span class="comment">&lt;!-- Insert your content here --&gt;</span>
+                                </div>
+                                <span class="focus">&lt;/nav&gt;</span>
+                            </td>
+                            <td>
+                                <p>This is not supported on Internet Explorer 8 and earlier.</p>
+                            </td>
+                            <td>
+                                &lt;header&gt;
+                                <div class="ind">
+                                    &lt;div&gt;
+                                    <div class="ind">
+                                        &lt;img src="./resources/miso_butterfly.jpg" /&gt;
+                                        <br />
+                                        &lt;div&gt;Welcome to Miso's fan page!&lt;/div&gt;
+                                    </div>
+                                    &lt;/div&gt;
+                                    <br />
+                                    <span class="focus">&lt;nav&gt;</span>
+                                    <div class="ind">
+                                        &lt;ul&gt;
+                                        <div class="ind">
+                                            &lt;a href="#"&gt;&lt;li&gt;About&lt;/li&gt;&lt;/a&gt;
+                                            <br />
+                                            &lt;a href="#"&gt;&lt;li&gt;News&lt;/li&gt;&lt;/a&gt;
+                                        </div>
+                                        &lt;/ul&gt;
+                                    </div>
+                                    <span class="focus">&lt;/nav&gt;</span>
+                                </div>
+                                &lt;/header&gt;
+                            </td>
+                            <td>
+                                <header id="headerSample">
+                                    <div id="home">
+                                        <img src="./resources/miso_butterfly.jpg" />
+                                        <div>Welcome to Miso's fan page!</div>
+                                    </div>
+                                    <nav>
+                                        <ul>
+                                            <a href="#"><li>About</li></a>
+                                            <a href="#"><li>News</li></a>
+                                        </ul>
+                                    </nav>
+                                </header>
+                            </td>
+                        </tr>
+                        <tr> <!-- progress -->
+                            <td>progress</td>
+                            <td>This tag is used to display the progress of a task.</td>
+                            <td>
+                                <span class="focus">&lt;progress&gt;&lt;/progress&gt;</span>
+                            </td>
+                            <td>
+                                <ul>
+                                    <li>This element is not supported on Internet Explorer 9 and earlier.</li>
+                                    <li>The following attributes are used:
+                                        <table>
+                                            <thead>
+                                                <tr>
+                                                    <th>Attribute</th>
+                                                    <th>Value</th>
+                                                    <th>Usage</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>max</td>
+                                                    <td>number</td>
+                                                    <td>specifies maximum value in range</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>value</td>
+                                                    <td>number</td>
+                                                    <td>specifies value in gauge</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </li>
+                                </ul>
+                            </td>
+                            <td>
+                                0 <span class="focus">&lt;progress max="100" value="60"&gt;&lt;/progress&gt;</span> 100
+                            </td>
+                            <td>
+                                0 <progress max="100" value="60"></progress> 100
+                            </td>
+                        </tr>
+                        <tr> <!-- rp -->
+                            <td>rp</td>
+                            <td>This tag is used to display parentheses if the browser does not support ruby annotations.</td>
+                            <td>
+                                <span class="focus">&lt;rp&gt;&lt;/rp&gt;</span>
+                            </td>
+                            <td>
+                                <ul>
+                                    <li>Ruby referenced in Usage is <a target="_blank" href="https://en.wikipedia.org/wiki/Ruby_character">ruby character</a>, not <a target="_blank" href="https://en.wikipedia.org/wiki/Ruby_(programming_language)">Ruby language</a>.</li>
+                                    <li>This element is more frequently seen in Chinese/Japanese writing.</li>
+                                </ul>
+                            </td>
+                            <td>
+                                &lt;ruby&gt;今日<span class="focus">&lt;rp&gt;(&lt;/rp&gt;</span>&lt;rt&gt;きょう&lt;/rt&gt;<span class="focus">&lt;rp&gt;)&lt;/rp&gt;</span>&lt;/ruby&gt;、&lt;ruby&gt;猫<span class="focus">&lt;rp&gt;(&lt;/rp&gt;</span>&lt;rt&gt;ねこ&lt;/rt&gt;<span class="focus">&lt;rp&gt;)&lt;/rp&gt;</span>&lt;/ruby&gt;ちゃんは&lt;ruby&gt;魚<span class="focus">&lt;rp&gt;(&lt;/rp&gt;</span>&lt;rt&gt;さかな&lt;/rt&gt;<span class="focus">&lt;rp&gt;)&lt;/rp&gt;</span>&lt;/ruby&gt;を&lt;ruby&gt;食<span class="focus">&lt;rp&gt;(&lt;/rp&gt;</span>&lt;rt&gt;た&lt;/rt&gt;<span class="focus">&lt;rp&gt;)&lt;/rp&gt;</span>&lt;/ruby&gt;べました。
+                            </td>
+                            <td>
+                                <ruby>今日<rp>(</rp><rt>きょう</rt><rp>)</rp></ruby>、<ruby>猫<rp>(</rp><rt>ねこ</rt><rp>)</rp></ruby>ちゃんは<ruby>魚<rp>(</rp><rt>さかな</rt><rp>)</rp></ruby>を<ruby>食<rp>(</rp><rt>た</rt><rp>)</rp></ruby>べました。
+                            </td>
+                        </tr>
+                        <tr> <!-- rt -->
+                            <td>rt</td>
+                            <td>This tag is used to indicate ruby characters that would be displayed above a character.</td>
+                            <td>
+                                <span class="focus">&lt;rt&gt;&lt;/rt&gt;</span>
+                            </td>
+                            <td>
+                                <ul>
+                                    <li>Ruby referenced in Usage is <a target="_blank" href="https://en.wikipedia.org/wiki/Ruby_character">ruby character</a>, not <a target="_blank" href="https://en.wikipedia.org/wiki/Ruby_(programming_language)">Ruby language</a>.</li>
+                                    <li>This element is more frequently seen in Chinese/Japanese writing.</li>
+                                </ul>
+                            </td>
+                            <td>
+                                &lt;ruby&gt;今日<span class="focus">&lt;rt&gt;きょう&lt;/rt&gt;</span>&lt;/ruby&gt;、&lt;ruby&gt;猫<span class="focus">&lt;rt&gt;ねこ&lt;/rt&gt;</span>&lt;/ruby&gt;ちゃんは&lt;ruby&gt;魚<span class="focus">&lt;rt&gt;さかな&lt;/rt&gt;</span>&lt;/ruby&gt;を&lt;ruby&gt;食<span class="focus">&lt;rt&gt;た&lt;/rt&gt;</span>&lt;/ruby&gt;</span>べました。
+                            </td>
+                            <td>
+                                <ruby>今日<rt>きょう</rt></ruby>、<ruby>猫<rt>ねこ</rt></ruby>ちゃんは<ruby>魚<rt>さかな</rt></ruby>を<ruby>食<rt>た</rt></ruby>べました。
+                            </td>
+                        </tr>
+                        <tr> <!-- ruby -->
+                            <td>ruby</td>
+                            <td>This tag is used to indicate ruby characters will be used.</td>
+                            <td>
+                                <span class="focus">&lt;ruby&gt;&lt;/ruby&gt;</span>
+                            </td>
+                            <td>
+                                <ul>
+                                    <li>Ruby referenced in Usage is <a target="_blank" href="https://en.wikipedia.org/wiki/Ruby_character">ruby character</a>, not <a target="_blank" href="https://en.wikipedia.org/wiki/Ruby_(programming_language)">Ruby language</a>.</li>
+                                    <li>This element is more frequently seen in Chinese/Japanese writing.</li>
+                                </ul>
+                            </td>
+                            <td>
+                                <span class="focus">&lt;ruby&gt;今日&lt;rt&gt;きょう&lt;/rt&gt;&lt;/ruby&gt;</span>、<span class="focus">&lt;ruby&gt;猫&lt;rt&gt;ねこ&lt;/rt&gt;&lt;/ruby&gt;</span>ちゃんは<span class="focus">&lt;ruby&gt;魚&lt;rt&gt;さかな&lt;/rt&gt;&lt;/ruby&gt;</span>を<span class="focus">&lt;ruby&gt;食&lt;rt&gt;た&lt;/rt&gt;&lt;/ruby&gt;</span>べました。
+                            </td>
+                            <td>
+                                <ruby>今日<rt>きょう</rt></ruby>、<ruby>猫<rt>ねこ</rt></ruby>ちゃんは<ruby>魚<rt>さかな</rt></ruby>を<ruby>食<rt>た</rt></ruby>べました。
+                            </td>
+                        </tr>
+                        <tr> <!-- section -->
+                            <td>section</td>
+                            <td>This tag is used as a space for a section, such has chapters.</td>
+                            <td>
+                                <span class="focus">&lt;section&gt;&lt;/section&gt;</span>
+                            </td>
+                            <td>
+                                <p>This is not supported on Internet Explorer 8 and earlier.</p>
+                            </td>
+                            <td>
+                                <span class="focus">&lt;section&gt;</span>
+                                <div class="ind">
+                                    &lt;h4&gt;Here is a section!&lt;/h5&gt;
+                                    <br />
+                                    &lt;p&gt;Add some text&lt;/p&gt;
+                                </div>
+                                <span class="focus">&lt;/section&gt;</span>
+                            </td>
+                            <td>
+                                <section>
+                                    <h4>Here is a section!</h5>
+                                    <p>Add some text</p>
+                                </section>
+                            </td>
+                        </tr>
+                        <tr> <!-- summary -->
+                            <td>summary</td>
+                            <td>This tag sets a visible heading for the details element it is inside.</td>
+                            <td>
+                                <span class="focus">&lt;summary&gt;</span><span class="comment">&lt;!-- Insert your content here --&gt;</span><span class="focus">&lt;/summary&gt;</span>
+                            </td>
+                            <td>
+                                <p>This element is not supported on Internet Explorer/Edge</p>
+                            </td>
+                            <td>
+                                &lt;details open&gt;
+                                <div class="ind">
+                                    <span class="focus">&lt;summary&gt;Photo Caption&lt;summary&gt;</span>
+                                    <br />
+                                    &lt;p&gt;Here is a picture of me in New York City!&lt;/p&gt;
+                                </div>
+                                &lt;/details&gt;
+                            </td>
+                            <td>
+                                <details open>
+                                    <summary>Photo Caption</summary>
+                                    <p>Here is a picture of me in New York City!</p>
+                                </details>
+                            </td>
+                        </tr>
+                        <tr> <!-- time -->
+                            <td>time</td>
+                            <td>This tag is used to encode date and time values.</td>
+                            <td>
+                                <span class="focus">&lt;time&gt;&lt;/time&gt;</span>
+                            </td>
+                            <td>
+                                <ul>
+                                    <li>This is not supported on Internet Explorer 8 and earlier.</li>
+                                    <li>Although the code does not render anything, the encoding allows machines to read the date to offer reminders on the user's calendar</li>
+                                </ul>
+                            </td>
+                            <td>
+                                I need to remember to go to the dentist on <span class="focus">&lt;time datetime="2022-01-20 15:00"&gt;Thursday&lt;/time&gt;.</span>
+                            </td>
+                            <td>
+                                I need to remember to go to the dentist on <time datetime="2022-01-20 15:00"></time>Thursday</time>.</span>
+                            </td>
+                        </tr>
+                        <tr> <!-- wbr -->
+                            <td>wbr</td>
+                            <td>This tag is indicates where word breaks are fine, particularly when the string is too long.</td>
+                            <td>
+                                <span class="focus">&lt;wbr&gt;</span>
+                            </td>
+                            <td>
+                                <p>This is not supported on Internet Explorer 11 and earlier.</p>
+                            </td>
+                            <td>
+                                Ishallmake<span class="focus">&lt;wbr&gt;</span><wbr>thisthelongest<span class="focus">&lt;wbr&gt;</span><wbr>tablecellever<span class="focus">&lt;wbr&gt;</span><wbr>youcannot<span class="focus">&lt;wbr&gt;</span><wbr>stopmehahaha<span class="focus">&lt;wbr&gt;</span><wbr>hhahahahaha<span class="focus">&lt;wbr&gt;</span><wbr>hahahaha
+                            </td>
+                            <td>
+                                Ishallmake<wbr>thisthelongest<wbr>tablecellever<wbr>youcannot<wbr>stopmehahaha<wbr>hhahahahaha<wbr>hahahaha
                             </td>
                         </tr>
                     </tbody>
